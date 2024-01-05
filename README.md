@@ -26,4 +26,4 @@ make run
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. 
 
 ## License
-
+[Apache 2.0](https://github.com/Shuyib/PAL/blob/main/LICENSE)
