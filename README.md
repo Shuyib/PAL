@@ -1,4 +1,6 @@
 # PAL - Program Aided Language Model (PAL)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Shuyib/PAL)
+
 Using streamlit, openai 'text-davinci-003' and Langchain to create a program aided language model. They are achieve state of the art results on math word problems. This project is a proof of concept to see if we can make an application to help people with their math problems by using a language model to help them understand the problem better.   
 
 Use an LLM -> decompose the problem into runnable steps -> run program in PY IDE -> return results to user.   
