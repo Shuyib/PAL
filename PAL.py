@@ -14,7 +14,7 @@ st.markdown(
     """Paper: [Program-Aided Language Models for Program Synthesis](https://arxiv.org/pdf/2211.10435.pdf)"""
 )
 st.markdown(
-    """Credit: [Sam Witteven](https://www.youtube.com/playlist?list=PL8motc6AQftk1Bs42EW45kwYbyJ4jOdiZ)"""
+    """Credit: [Sam Witteveen](https://www.youtube.com/playlist?list=PL8motc6AQftk1Bs42EW45kwYbyJ4jOdiZ)"""
 )
 
 # sidebar for OpenAI API key
