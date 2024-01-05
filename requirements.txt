@@ -1,0 +1,5 @@
+streamlit
+langchain==0.0.47
+black
+ipython
+openai==0.28
