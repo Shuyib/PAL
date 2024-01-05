@@ -1,3 +1,5 @@
+
+'''Using streamlit, openai 'text-davinci-003' and Langchain to create a program aided language model.'''
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.chains import PALChain
