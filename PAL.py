@@ -1,3 +1,8 @@
+""" Program Aided Language model: Helps with math problems 
+    This example was adapted from Data Professor Github repo 
+    It uses streamlit to create a web app that uses OpenAI API to generate responses to math questions
+    Langchain is used to chain the responses to create a coherent response using PALChain module
+"""
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.chains import PALChain
