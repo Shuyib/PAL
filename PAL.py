@@ -1,5 +1,3 @@
-
-'''Using streamlit, openai 'text-davinci-003' and Langchain to create a program aided language model.'''
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.chains import PALChain
@@ -16,11 +14,15 @@ st.markdown(
     """Paper: [Program-Aided Language Models for Program Synthesis](https://arxiv.org/pdf/2211.10435.pdf)"""
 )
 st.markdown(
-    """Credit: [Sam Witteveen](https://www.youtube.com/playlist?list=PL8motc6AQftk1Bs42EW45kwYbyJ4jOdiZ)"""
+    """Credit: [Sam Witteven](https://www.youtube.com/playlist?list=PL8motc6AQftk1Bs42EW45kwYbyJ4jOdiZ)"""
 )
 
-# sidebar for OpenAI API key
+# sidebar for OpenAI API key & model selection
 openai_api_key = st.sidebar.text_input("Enter your OpenAI API key", type="password")
+select_instruct_model = st.sidebar.selectbox(
+    "Select Instruction Model",
+    ("text-davinci-003", "gpt-3.5-turbo-instruct"),
+)
 
 
 def generate_response(input_text):
@@ -40,7 +42,12 @@ def generate_response(input_text):
     -------
     >>> generate_response("Leah had 32 chocolates and her sister had 42. If they ate 35, how many pieces do they have left in total?")
     """
-    llm = OpenAI(temperature=0, openai_api_key=openai_api_key, max_tokens=512)
+    llm = OpenAI(
+        temperature=0,
+        openai_api_key=openai_api_key,
+        max_tokens=512,
+        model=select_instruct_model,
+    )
     pal_chain = PALChain.from_math_prompt(llm, verbose=True)
     st.markdown(pal_chain.run(input_text))
 
