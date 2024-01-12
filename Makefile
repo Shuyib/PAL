@@ -1,4 +1,4 @@
-# Credit: Ment, Alex (former Intern) and #https://github.com/mattharrison/sample_nb_code_project/blob/main/Makefile
+# https://github.com/mattharrison/sample_nb_code_project/blob/main/Makefile
 # .ONESHELL tells make to run each recipe line in a single shell
 .ONESHELL:
 
